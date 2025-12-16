@@ -8,8 +8,7 @@ datos = [
     "La miel nunca se pudre.",
     "Los gatos duermen en promedio 15 horas al día.",
     "El Monte Everest crece unos milímetros cada año.",
-    "el lauti es alto pro"
-    "aguante bana"
+   
 ]
 
 @app.route('/')
