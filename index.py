@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 import random
 
 app = Flask(__name__)
@@ -9,11 +9,13 @@ datos = [
     "Los gatos duermen en promedio 15 horas al día.",
     "El Monte Everest crece unos milímetros cada año.",
     "el lauti es alto pro"
+    "aguante bana"
 ]
 
 @app.route('/')
 def inicio():
     dato = random.choice(datos)
-    return f"<h1>Hola, ¿cómo están?</h1><p>Dato random: {dato}</p>"
+    return render_template("index.html", dato=dato)
+
 if __name__ == '__main__':
     app.run(debug=False)
